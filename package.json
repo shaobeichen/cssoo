@@ -1,0 +1,29 @@
+{
+    "name": "csoo",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "cli": "node ./bin/cli.js"
+    },
+    "bin": {
+        "csoo": "./bin/cli.js"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shaobeichen/cssoo.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/shaobeichen/cssoo/issues"
+    },
+    "homepage": "https://github.com/shaobeichen/cssoo#readme",
+    "dependencies": {
+        "clipboardy": "^4.0.0"
+    }
+}
