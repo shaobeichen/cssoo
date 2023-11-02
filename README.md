@@ -4,6 +4,25 @@
 
 优惠券 横向 纵向
 
+```html
+<style>
+      .coupon {
+        width: 240px;
+        height: 100px;
+        background-image: radial-gradient(
+          circle at 9px 8px,
+          transparent 0%,
+          transparent 8px,
+          #e15852 8px,
+          #e15852 100%
+        );
+        background-position: 66px -8px;
+        background-size: 100% 100%;
+      }
+    </style>
+    <div class="coupon"></div>
+```
+
 单行溢出省略号
 
 多行溢出省略号
