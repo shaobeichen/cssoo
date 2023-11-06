@@ -16,15 +16,20 @@ const { options } = selectQuestion
 const answers = []
 for (let i = 0; i < options.length; i++) {
   const item = options[i]
+  let value = ''
   if (item.type === 'input') {
-    answers.push(await input({ message: item.message, default: item.default }))
+    value = await input({ message: item.message, default: item.default })
   }
   if (item.type === 'select') {
-    answers.push(await select({ message: item.message, choices: item.choices }))
+    value = await select({ message: item.message, choices: item.choices })
   }
+  answers.push({ id: i, value, ...item })
 }
 
-clipboard.writeSync(answer, answers)
+answers.sort((a, b) => a.prepose - b.prepose)
+
+// clipboard.writeSync(answer, answers)
+console.warn(answer, answers)
 
 const content = `
 --------------------

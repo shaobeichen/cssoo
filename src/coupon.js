@@ -9,15 +9,15 @@ export default {
         height: {{q3}};
         background-image: radial-gradient(
             circle at {{q5}} {{q5}},
-            transparent 0%,
-            transparent {{q5}},
+            {{q7}} 0%,
+            {{q7}} {{q5}},
             {{q4}} {{q5}},
             {{q4}} 100%
         );
-        background-position: {{q6}} -{{q5}};
+        {{q1}}
         background-size: 100% 100%;
         border-radius: {{q5}};
-        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+        {{q8}}
     }
   </style>
   <div class="coupon"></div>
@@ -26,16 +26,19 @@ export default {
     {
       type: 'select',
       message: '请选择方向',
+      prepose: true,
       choices: [
         {
           name: '横向',
           value: 'horizontal',
           description: '',
+          codeSnippet: 'background-position: {{q6}} -{{q5}};',
         },
         {
           name: '纵向',
           value: 'vertical',
           description: '',
+          codeSnippet: 'background-position: -{{q5}} {{q6}};',
         },
       ],
     },
@@ -77,6 +80,7 @@ export default {
           name: '是',
           value: 'shadow-yes',
           description: '',
+          codeSnippet: 'filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));',
         },
         {
           name: '否',
