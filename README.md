@@ -7,7 +7,7 @@
 
 ## 预览
 
-![preview.png](/docs/preview.png)
+<img src="./docs/preview.png" width="400">
 
 ## 使用
 
