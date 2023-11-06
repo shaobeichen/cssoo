@@ -6,7 +6,7 @@ import boxen from 'boxen'
 import { input, select } from '@inquirer/prompts'
 import choices from './data/index.js'
 
-export default async () => {
+const main = async () => {
   const answer = await select({
     message: '选择你要生成的CSS片段',
     choices,
@@ -39,13 +39,13 @@ export default async () => {
       const selectItem = item.choices.find((v) => v.value === item.selectValue) || {}
       selectQuestion.codeSnippet = selectQuestion.codeSnippet.replace(
         new RegExp(replaceBlock, 'g'),
-        selectItem.codeSnippet,
+        selectItem.codeSnippet || '',
       )
     }
     if (item.type === 'input') {
       selectQuestion.codeSnippet = selectQuestion.codeSnippet.replace(
         new RegExp(replaceBlock, 'g'),
-        item.selectValue,
+        item.selectValue || '',
       )
     }
   })
@@ -57,5 +57,7 @@ ${clipboard.readSync()}
 
  ✅ 以上片段已复制到剪贴板!
 `
-  console.log(chalk.green(boxen(content, { padding: 1, margin: 1, borderStyle: 'double' })))
+  console.log(chalk.green(boxen(content, { padding: 1, margin: 1, borderStyle: 'round' })))
 }
+
+main()

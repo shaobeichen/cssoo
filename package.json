@@ -1,14 +1,30 @@
 {
     "name": "@shaoo/cssoo",
     "version": "2.0.0",
-    "description": "",
+    "description": "根据输入的参数生成常用的 CSS 代码片段，包括 优惠券、三角形、单行省略、多行省略等",
     "type": "module",
-    "main": "index.js",
     "scripts": {
-        "dev": "node ./bin/cli.js"
+        "dev": "node src/index.js",
+        "prepublishOnly": "npm run build",
+        "build": "rm -rf dist && rollup --config",
+        "release": "npm publish"
     },
     "bin": {
         "cssoo": "./bin/cli.js"
+    },
+    "exports": {
+        ".": {
+            "node": "./dist/index.mjs"
+        }
+    },
+    "main": "./dist/index.mjs",
+    "module": "./dist/index.mjs",
+    "files": [
+        "dist",
+        "bin"
+    ],
+    "engines": {
+        "node": ">=12"
     },
     "publishConfig": {
         "access": "public"
@@ -17,16 +33,23 @@
         "type": "git",
         "url": "git+https://github.com/shaobeichen/cssoo.git"
     },
-    "author": "",
-    "license": "ISC",
+    "author": "shaobeichen <shaobeichen@outlook.com>",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/shaobeichen/cssoo/issues"
     },
     "homepage": "https://github.com/shaobeichen/cssoo#readme",
+    "keywords": [
+        "cssoo",
+        "shaoo"
+    ],
     "dependencies": {
         "@inquirer/prompts": "^3.2.0",
         "boxen": "^7.1.1",
         "chalk": "^5.3.0",
-        "clipboardy": "^4.0.0"
+        "clipboardy": "^2.3.0"
+    },
+    "devDependencies": {
+        "rollup": "^4.3.0"
     }
 }

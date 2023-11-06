@@ -1,0 +1,16 @@
+.vscode
+
+node_modules/
+
+src/
+tests/
+docs/
+
+.czvinylrc
+.gitignore
+.npmignore
+
+index.html
+
+package-lock.json
+rollup.config.js
