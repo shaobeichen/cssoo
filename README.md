@@ -1,11 +1,11 @@
 # cssoo
 
-> 根据输入的参数生成常用的 CSS 代码片段，包括 优惠券、三角形、单行省略、多行省略等
-
 <a href="" target="__blank"><img src="https://img.shields.io/node/v/%40shaoo%2Fcssoo?style=for-the-badge" alt=""></a>
-<a href="https://www.npmjs.com/package/@shaoo/cssoo" target="__blank"><img src="https://img.shields.io/npm/v/%40shaoo%2Fcssoo?style=for-the-badge" alt=""></a>
-<a href="https://www.npmjs.com/package/@shaoo/cssoo" target="__blank"><img src="https://img.shields.io/npm/dm/%40shaoo/cssoo?style=for-the-badge" alt=""></a>
-<a href="https://www.npmjs.com/package/@shaoo/cssoo" target="__blank"><img src="https://img.shields.io/npm/l/%40shaoo%2Fcssoo?style=for-the-badge" alt=""></a>
+<a href="https://www.npmjs.com/package/@shaoo/cssoo" target="_blank"><img src="https://img.shields.io/npm/v/%40shaoo%2Fcssoo?style=for-the-badge" alt=""></a>
+<a href="https://www.npmjs.com/package/@shaoo/cssoo" target="_blank"><img src="https://img.shields.io/npm/dm/%40shaoo/cssoo?style=for-the-badge" alt=""></a>
+<a href="" target="_blank"><img src="https://img.shields.io/npm/l/%40shaoo%2Fcssoo?style=for-the-badge" alt=""></a>
+
+> 根据输入的参数生成常用的 CSS 代码片段，包括 优惠券、三角形、单行省略、多行省略等
 
 ## 预览
 
