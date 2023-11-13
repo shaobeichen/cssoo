@@ -4,6 +4,12 @@
 
 ![GitHub stars](https://img.shields.io/node/v/%40shaoo%2Fcssoo?style=for-the-badge)
 &nbsp;
+![npm](https://img.shields.io/npm/v/%40shaoo%2Fcssoo?style=for-the-badge)
+&nbsp;
+![npm](https://img.shields.io/npm/dm/%40shaoo/cssoo?style=for-the-badge)
+&nbsp;
+![NPM](https://img.shields.io/npm/l/%40shaoo%2Fcssoo?style=for-the-badge)
+&nbsp;
 
 ## 预览
 
