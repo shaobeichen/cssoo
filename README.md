@@ -48,14 +48,24 @@ npx clear-npx-cache
 <div class="coupon"></div>
 ```
 
+2. 三角形
+
+```html
+<style>
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+  }
+</style>
+<div class="triangle"></div>
+```
+
 ## 待支持片段
 
-1. 三角形 上 下 左 右
-
-2. 单行溢出省略号
-
-3. 多行溢出省略号
-
-4. 修改滚动条样式
-
-5. 0.5px 边框 上下 左右 全部
+- 单行溢出省略号
+- 多行溢出省略号
+- 修改滚动条样式
+- 0.5px 边框 上下 左右 全部
