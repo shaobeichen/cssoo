@@ -1,6 +1,6 @@
 {
     "name": "@shaoo/cssoo",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "根据输入的参数生成常用的 CSS 代码片段，包括 优惠券、三角形、单行省略、多行省略等",
     "type": "module",
     "scripts": {
@@ -9,9 +9,7 @@
         "build": "rm -rf dist && rollup --config",
         "release": "npm publish"
     },
-    "bin": {
-        "cssoo": "./bin/cli.js"
-    },
+    "bin": "./bin/cli.js",
     "exports": {
         ".": {
             "node": "./dist/index.mjs"
