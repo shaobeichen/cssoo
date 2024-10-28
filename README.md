@@ -27,45 +27,12 @@ npx clear-npx-cache
 
 ## 已支持片段
 
-1. 优惠券
-
-```html
-<style>
-  .coupon {
-    width: 240px;
-    height: 100px;
-    background-image: radial-gradient(
-      circle at 8px 8px,
-      transparent 0%,
-      transparent 8px,
-      #e15852 8px,
-      #e15852 100%
-    );
-    background-position: 66px -8px;
-    background-size: 100% 100%;
-  }
-</style>
-<div class="coupon"></div>
-```
-
-2. 三角形
-
-```html
-<style>
-  .triangle {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid blue;
-  }
-</style>
-<div class="triangle"></div>
-```
-
-## 待支持片段
-
+- 优惠券
+- 三角形
 - 单行溢出省略号
 - 多行溢出省略号
 - 修改滚动条样式
+
+## 待支持片段
+
 - 0.5px 边框 上下 左右 全部

@@ -1,6 +1,6 @@
 {
     "name": "@shaoo/cssoo",
-    "version": "2.1.3",
+    "version": "2.2.0",
     "description": "根据输入的参数生成常用的 CSS 代码片段，包括 优惠券、三角形、单行省略、多行省略等",
     "type": "module",
     "scripts": {
